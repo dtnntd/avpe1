@@ -6,4 +6,5 @@
 __pycache__/
 *.log
 .venv
-.exprot/__pycache__/
+.export/__pycache__/*3
+.export/release_1.1/*
