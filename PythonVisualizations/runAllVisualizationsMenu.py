@@ -252,6 +252,7 @@ def showVisualizations(  # Display a set of VisualizationApps in pulldown menu
                     file=sys.stderr,
                 )
             pane = ttk.Frame(top)
+            # pane.pack()
             loading["text"] = "\nLoading module {} of {} modules...".format(
                 len(appWindows), len(classes)
             )

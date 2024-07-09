@@ -3,7 +3,7 @@
 # Install with:
 #   pip install -r requirements.txt
 #
-Pillow
+Pillow == 10.3.0
 # Needed for building releases and exported bundles
-GitPython
+GitPython 
 PyInstaller
