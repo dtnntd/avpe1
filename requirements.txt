@@ -1,7 +1,7 @@
 # Python module requiremnts
 #
 # Install with:
-#   pip3 install -r requirements.txt
+#   pip install -r requirements.txt
 #
 Pillow
 # Needed for building releases and exported bundles

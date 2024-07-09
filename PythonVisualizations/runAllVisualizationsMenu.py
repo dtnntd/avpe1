@@ -267,7 +267,7 @@ def showVisualizations(  # Display a set of VisualizationApps in pulldown menu
                 name = app.__name__ + " *"
                 msg = "Error instantiating {}:\n{}".format(app.__name__, e)
                 label = Label(pane, text=msg, fg="red")
-                label.grid()
+                label.grid()                
                 print(msg, file=sys.stderr)
 
             if (

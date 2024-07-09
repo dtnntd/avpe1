@@ -5,5 +5,5 @@
 .idea
 __pycache__/
 *.log
-venv/
-.exprot
+.venv
+.exprot/__pycache__/
