@@ -22,7 +22,7 @@ def export_windows(
     appName: "Base name of application to export" = "DatastructureVisualizations",
     version_file: "JSON file containing the version tuple" = "version.json",
     source_directory: "Directory containing source and PNG files" = ".",
-    icon: "Path to icon file" = "design/Datastructure-Visualizations-icon.ico",
+    icon: "Path to icon file" = "../PythonVisualizations/design/Datastructure-Visualizations-icon.ico",
     zip_file: "Zip archive name" = "{name}{version}.zip",
     sign_certificate: "Codesign certificate filename or subject name" = "",
     password: "Password for code signing certificate or - to prompt" = "",
@@ -50,7 +50,7 @@ def export_windows(
         "--add-data",
         os.path.join(os.path.abspath(source_directory), "*.png") + ";.",
         "--add-data",
-        "C:/Program Files (x86)/Windows Kits/10/Redist/10.0.22000.0/ucrt/DLLs/x86/*.dll;.",
+        "C:/Program Files (x86)/Windows Kits/10/Redist/10.0.26100.0/ucrt/DLLs/x86/*.dll;.",
     ]
 
     specPath = os.path.dirname(distribution)
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i",
         "--icon",
-        default="design/Datastructure-Visualizations-icon.ico",
+        default="../PythonVisualizations/design/Datastructure-Visualizations-icon.ico",
         help="Path to icon file (relative to directory with visualizaion apps)",
     )
     parser.add_argument(

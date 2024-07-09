@@ -8,7 +8,6 @@ is updated with the new version file and then tagged for that version.
 import sys, os, argparse, json, git, re, shutil
 from export_common import *
 from export_trinket import *
-from export_macOS import *
 from export_windows import *
 
 version_labels = ["major", "minor"]
@@ -141,29 +140,18 @@ def make_release(
             exclude=[re.compile(exp) for exp in excludeDefaults],
             clean=[re.compile(exp) for exp in cleanDefaults],
         )
-    if "macOS" in targets:
-        if sys.platform.lower() in ("darwin"):
-            if verbose > 0:
-                print(targetAnnounce.format("macOS"))
-            export_macOS(
-                version_file=version_path,
-                source_directory=source_directory,
-                disk_image=os.path.join(releaseDirectory, "{name}{version}.dmg"),
-                work_dir=os.path.join(releaseDirectory, "build"),
-                distribution=os.path.join(releaseDirectory, "dist"),
-                verbose=verbose,
-            )
-        elif verbose > 0:
-            print(
-                "Skipping {} export since current platform is {}".format(
-                    "macOS", sys.platform
-                )
-            )
     if "windows" in targets:
         if sys.platform.lower().startswith("win"):
             if verbose > 0:
                 print(targetAnnounce.format("Windows"))
             # TBD export_windows()
+            export_windows(
+                version_file=version_path,
+                source_directory=source_directory,
+                work_dir=os.path.join(releaseDirectory, "build"),
+                distribution=os.path.join(releaseDirectory, "dist"),
+                verbose=verbose,
+            )
         elif verbose > 0:
             print(
                 "Skipping {} export since current platform is {}".format(
