@@ -137,10 +137,9 @@ intro_msg = """
 Welcome to the algorithm visualizations for the high school curriculum:
 Data Structures and Algorithms in Python
 
-.
+Designed by Dat Tien Nguyen
+Hanoi National University of Education
 
-
-{customInstructions}
 
 
 """

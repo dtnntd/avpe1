@@ -3,7 +3,6 @@ Program to show data structure visualizations in a single application.
 '''
 
 import sys, os
-
 try:
     if not hasattr(sys, 'path'): sys.path = []
     if (sys.argv and os.path.exists(sys.argv[0]) and
