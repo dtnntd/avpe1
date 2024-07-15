@@ -38,7 +38,7 @@ class Visualization(object):  # Base class for Python visualizations
     VALUE_COLOR = "black"
     VARIABLE_FONT = ("Courier", FONT_SIZE * 8 // 10)
     VARIABLE_COLOR = "brown3"
-    NONLOCAL_VARIABLE_COLOR = "bisque"
+    NONLOCAL_VARIABLE_COLOR = "lightblue"
     FOUND_FONT = ("Helvetica", FONT_SIZE)
     FOUND_COLOR = "green2"
     SMALL_FONT = ("Helvetica", -9)

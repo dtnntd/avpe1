@@ -843,7 +843,7 @@ if __name__ == "__main__":
             buttonImage(imageButton, images[(i + 1) % len(images)])
 
         imageButton["command"] = rotateButtonImage
-    palette = ("red", "green", "blue", "", "pink", "black", "yellow", "orange", "brown")
+    palette = ("red", "green", "blue", "white", "pink", "black", "yellow", "orange", "brown")
     nc = len(palette)
     states = ("Fade", "Restore", "Disable", "Reenable")
     colors = {}

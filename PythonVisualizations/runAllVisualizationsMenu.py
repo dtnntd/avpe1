@@ -177,7 +177,7 @@ def showVisualizations(  # Display a set of VisualizationApps in pulldown menu
 
     if adjustForTrinket:
         VAP.MIN_CODE_CHARACTER_HEIGHT = 9
-    restoreMenu = Canvas(top, height=MIN_MENUBAR_HEIGHT, bg="pink")
+    restoreMenu = Canvas(top, height=MIN_MENUBAR_HEIGHT, bg="lightblue")
     restoreMenu.grid(row=0, column=0, sticky=(N, E, W, S))
     menubutton = Menubutton(top, text="Select Visualization", font=MENU_FONT)
     menubutton.grid(row=0, column=0)
