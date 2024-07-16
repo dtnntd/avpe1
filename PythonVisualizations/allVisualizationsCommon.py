@@ -31,6 +31,8 @@ def findVisualizations(filesAndDirectories, verbose=0):
         orig__path__ = None
         sys.path = []
     for fileOrDir in filesAndDirectories:
+        if fileOrDir is None:
+            continue
         isDir = os.path.isdir(fileOrDir)
         files = glob.glob(os.path.join(fileOrDir, "*.py")) if isDir else [fileOrDir]
         if verbose > 1:
@@ -43,8 +45,8 @@ def findVisualizations(filesAndDirectories, verbose=0):
                 ),
                 file=sys.stderr,
             )
-            if verbose > 2 and isDir:
-                print("Files:", "\n".join(files), file=sys.stderr)
+        if verbose > 2 and isDir:
+            print("Files:", "\n".join(files), file=sys.stderr)
         for filename in [f for f in files if isPatternInFile(runVizCallPattern, f)]:
             dirs = pathsep.split(os.path.normpath(os.path.dirname(filename)))
             if dirs and dirs[0] == ".":
