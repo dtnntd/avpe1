@@ -30,7 +30,7 @@ def makeCommand(args):
 
 if not hasattr(sys, "path"):
     sys.path = []
-for dir in (".", "../PythonVisualizations"):
+for dir in (".", "PythonVisualizations"):
     if dir not in sys.path:
         sys.path.append(dir)
 
