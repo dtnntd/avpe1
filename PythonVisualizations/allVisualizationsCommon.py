@@ -137,9 +137,9 @@ URL_pattern = re.compile(r"(https*|ftp)://[\w-]+\.[\w/.,?&=#%-]+")
 
 intro_msg = """
 Welcome to the algorithm visualizations for the high school curriculum:
-Data Structures and Algorithms in Python
+Algorithm Visualization in Python for Education
 
-Designed by Dat Tien Nguyen
+Designed by Dat Tien Nguyen - 70K - FIT
 Hanoi National University of Education
 
 

@@ -5,6 +5,9 @@
 .idea
 __pycache__/
 *.log
-.venv
-.export/__pycache__/*3
-.export/release_1.1/*
+.venv/
+.export/
+.venv1/
+
+
+
