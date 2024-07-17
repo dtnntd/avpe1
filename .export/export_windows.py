@@ -19,7 +19,7 @@ from export_common import *
 
 
 def export_windows(
-    appName: "Base name of application to export" = "DatastructureVisualizations",
+    appName: "Base name of application to export" = "AVPE",
     version_file: "JSON file containing the version tuple" = "version.json",
     source_directory: "Directory containing source and PNG files" = ".",
     icon: "Path to icon file" = "../PythonVisualizations/design/Datastructure-Visualizations-icon.ico",
@@ -151,7 +151,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-n",
         "--name",
-        default="DatastructureVisualizations",
+        default="AVPE",
         help="Base name of execcutable",
     )
     parser.add_argument(

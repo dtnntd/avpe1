@@ -147,7 +147,7 @@ def resizeHandler(event):
 def showVisualizations(  # Display a set of VisualizationApps in pulldown menu
     classes,
     start=None,
-    title="AVPE",
+    title="Datastructure Visualizations",
     version=None,
     adjustForTrinket=False,
     seed="3.14159",
@@ -362,7 +362,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-t",
         "--title",
-        default="AVPE",
+        default="Datastructure Visualizations",
         help="Title for top level window",
     )
     parser.add_argument(
