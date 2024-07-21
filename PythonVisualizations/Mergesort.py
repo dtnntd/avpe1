@@ -15,12 +15,12 @@ except ModuleNotFoundError:
 V = vector
 
 
-class Mergesort(SortingBase):
+class MergeSort(SortingBase):
 
     CELL_GAP = 6
     LEVEL_SEPARATION = 25
 
-    def __init__(self, title="Mergesort", values=None, **kwargs):
+    def __init__(self, title="Merge Sort", values=None, **kwargs):
         super().__init__(title=title, **kwargs)
         self.ARRAY_Y0 = 50
         self.CELL_HEIGHT = 90
@@ -509,5 +509,5 @@ if __name__ == "__main__":
     if "-r" not in options:  # Use fixed seed for testing consistency unless
         random.seed(3.14159)  # random option specified
 
-    array = Mergesort(values=[int(arg) for arg in nonneg] if nonneg else None)
+    array = MergeSort(values=[int(arg) for arg in nonneg] if nonneg else None)
     array.runVisualization()

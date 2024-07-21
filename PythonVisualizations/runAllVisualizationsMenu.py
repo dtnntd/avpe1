@@ -30,14 +30,15 @@ except ModuleNotFoundError:
 PREFERRED_ARRANGEMENT = [
     ["1", ["Array"]],
     ["2", ["SimpleArraySort"]],
-    ["3", ["Stack"]],
-    ["4", ["Queue"]],
-    ["5", ["LinkedList"]],
-    ["6", ["TowerOfHanoi"]],
-    ["7", ["Mergesort"]],
-    ["8", ["AdvancedArraySort"]],
-    ["9", ["BinaryTree"]],
-    ["10", ["Graph"]],
+    ["3", ["QuickSort"]],
+    ["4", ["LinkedList"]],
+    ["5", ["TowerOfHanoi"]],
+    ["6", ["MergeSort"]],
+    ["7", ["BinarySearch"]],
+    ["8", ["Stack"]],
+    ["9", ["Queue"]],
+    ["10", ["BinaryTree"]],
+    ["11", ["Graph"]],
 ]
 
 INTRO_FONT = ("Helvetica", -16)

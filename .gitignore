@@ -6,8 +6,12 @@
 __pycache__/
 *.log
 .venv/
-.export/** */
+
+.export/
+
 .venv1/
-.e
+
+
+
 
 
