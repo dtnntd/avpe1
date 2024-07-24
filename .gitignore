@@ -10,8 +10,7 @@ __pycache__/
 .*
 !/.gitignore
 
-.export/.py
-.export/.json
+.export/
 
 
 
