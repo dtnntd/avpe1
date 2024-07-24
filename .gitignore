@@ -7,11 +7,8 @@ __pycache__/
 *.log
 .venv/
 
-.export/
-
-.venv1/
-
-
+.*
+!/.gitignore
 
 
 
