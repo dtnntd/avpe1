@@ -6,10 +6,6 @@
 __pycache__/
 *.log
 .venv/
-
-.*
-!/.gitignore
-
 .export/
 
 
